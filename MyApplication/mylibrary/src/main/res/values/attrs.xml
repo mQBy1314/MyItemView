@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyItemView">
+        <attr name="left_Text" format="string" />
+        <attr name="right_Text" format="string" />
+        <attr name="right_HintText" format="string"/>
+        <attr name="left_Image" format="reference"/>
+        <attr name="right_Image" format="reference"/>
+        <attr name="android:inputType" />
+        <attr name="top_line" format="boolean" />
+        <attr name="bottom_line" format="boolean" />
+        <attr name="right_text_type">
+            <enum name="text" value="100" />
+            <enum name="edit" value="101" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/item_padding_t_b"
+    android:paddingTop="@dimen/item_padding_t_b"
+    android:paddingLeft="@dimen/item_padding_l_r"
+    android:paddingRight="@dimen/item_padding_l_r"
+    >
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_padding_l_r"
+        android:layout_weight="1"
+        android:textColor="@color/myitem_left_text"
+        android:textSize="@dimen/item_text_size" />
+
+    <com.mqby.mylibrary.MyEditText
+        android:id="@+id/tv_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_weight="1.5"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|right"
+        android:minHeight="@dimen/item_min_height"
+        android:textSize="@dimen/item_text_size" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:paddingLeft="4dp"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+</LinearLayout>
